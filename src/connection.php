@@ -17,7 +17,7 @@
         }
         else if($data) {
             if (password_verify($mdp, $data["mdp"])){
-                print "<p class=\"success\">Votre login est " . $email . "votre mot de passe est  " . md5($mdp);
+                print "<p class=\"success\">Votre login est ".$email."votre mot de passe est  ". md5($mdp);
                 header("Location: connection.inc.php");
                 exit;
             }

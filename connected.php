@@ -24,8 +24,5 @@
                 </form>
             </fieldset>
         </div>
-        <?php
-            include_once "./src/"
-        ?>
     </main>
 </body>

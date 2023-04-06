@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `connexion` (
   `id` int(10) NOT NULL,
-  `prenom` varchar(255) NOT NULL,
-  `nom` varchar(255) NOT NULL,
-  `email` text NOT NULL,
-  `mdp` text NOT NULL
+  `prenom` text NOT NULL,
+  `nom` text NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mdp` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

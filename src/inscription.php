@@ -16,6 +16,6 @@ if (isset($_POST['email']) || isset($_POST['mdp'])) {
     else {
         $req = $_bdd->prepare('INSERT INTO connection (prenom, nom, email, mdp)VALUES(?,?,?,?)');
         $req->execute(array($_POST['email'], password_hash($_POST['mdp'], PASSWORD_DEFAULT), $_POST['prenom'], $_POST['nom']));        
-        echo "<p class=\"success\">Merci votre contenu est ajouté : <a href=\"../connected.php\" title=\"pub\">Connectez vous</a></p>";
+        echo "<p class=\"success\">Merci votre contenu est ajouté : <a href=\"#\" title=\"pub\">Connectez vous</a></p>";
     }
 }
