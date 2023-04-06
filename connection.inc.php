@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./asset/gmail.png">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <title>Gmail</title>
-</head>
 <header>
     <a href="#"><img src="./asset/imgmail.png" alt="gmail"></a>
     <nav>
         <ul>
-            <li><a href="index.html">POUR LES PROS</a></li>
-            <li><a href="#connection">CONNEXION</a></li>
-            <li><a href="#connection">CRÉER UN COMPTE</a></li>
+            <li><a href="#">POUR LES PROS</a></li>
+            <li><a href="./index.php">CRÉER UN COMPTE</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <main>
-        <section>
-            <h2>Retrouvez la fluidité et la <br>simplicité de Gmail sur<br>tous vos appareil</h2>
-            <a href="#connection">CRÉER UN COMPTE</a>
-        </section>
         <div class="form">
             <h3>Une boîte de réception entièrement repensée</h3>
             <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux messages et choisissez
@@ -44,9 +28,8 @@
                 </form>
             </fieldset>
         </div>
-        <div class="scroll">
-            <a href="#connection"><img src="./asset/arrow.png" alt="scroll button"></a>
-        </div>
- </main>
+        <?php
+            include_once "./src/connection.php"
+        ?>
+    </main>
 </body>
-</html>
